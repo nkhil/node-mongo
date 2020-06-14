@@ -1,4 +1,6 @@
 module.exports = {
   port: 8080,
-  expiration: 60000 * 60 * 24 * 7,
+  mongo: {
+    uri: process.env.MONGODB_URI || 'mongodb://localhost:27017',
+  },
 };

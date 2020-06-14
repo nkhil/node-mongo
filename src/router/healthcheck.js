@@ -1,11 +1,9 @@
-'use strict';
-
 const express = require('express');
 
 const router = express.Router();
 
 router.get('/', (_, res, next) => {
-  res.status(200).redirect('/home.html');
+  res.status(200).json({ status: 'OK' });
   next();
 });
 
